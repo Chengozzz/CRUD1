@@ -21,6 +21,8 @@ require __DIR__.'/auth.php';
 
 Route::controller(App\Http\Controllers\CrudController::class) -> group(function(){
 
+    Route::get('/productos', 'index');
     Route::get('/agregar-producto', 'create_function');
     Route::post('/agregar-producto', 'store_function');
+
 });

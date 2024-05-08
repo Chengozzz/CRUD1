@@ -23,15 +23,15 @@ class ProductFormRequest extends FormRequest
     {
         return [
             //
-            'name' => [
+            'nombre' => [
                 'required ',
                 'max:255'
             ],
-            'description' => [
+            'descripcion' => [
                 'required',
                 'max:255',
-            ],'price' => [
-                'required',
+            ],'precio' => [
+                'required'
                 
             ]
         ];
